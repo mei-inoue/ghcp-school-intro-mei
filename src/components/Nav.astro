@@ -1,0 +1,17 @@
+---
+import type { NavItem } from "../i18n/types";
+
+type Props = {
+  items: NavItem[];
+};
+
+const { items } = Astro.props;
+---
+
+<nav class="site-nav" aria-label="Section navigation">
+  <ul>
+    {items.map((item) => (
+      <li><a href={`#${item.id}`}>{item.label}</a></li>
+    ))}
+  </ul>
+</nav>

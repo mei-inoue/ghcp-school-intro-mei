@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" role="img" aria-labelledby="title desc">
+  <title id="title">Access placeholder</title>
+  <desc id="desc">Monochrome map-like illustration with route lines and markers.</desc>
+  <rect width="900" height="720" fill="#f4f4f1"/>
+  <path d="M145 160C250 170 350 280 440 275C520 270 575 180 665 185C730 188 780 235 820 275" fill="none" stroke="#111" stroke-width="7"/>
+  <path d="M145 420C220 460 335 440 410 500C485 560 610 580 760 520" fill="none" stroke="#111" stroke-width="7"/>
+  <path d="M260 120L220 620M500 110L450 620M720 150L660 620" stroke="#111" stroke-width="5" stroke-dasharray="14 14"/>
+  <circle cx="440" cy="275" r="36" fill="#fff" stroke="#111" stroke-width="7"/>
+  <circle cx="410" cy="500" r="28" fill="#111"/>
+  <rect x="94" y="564" width="240" height="82" fill="#fff" stroke="#111" stroke-width="7"/>
+  <path d="M130 605H298" stroke="#111" stroke-width="7"/>
+</svg>
