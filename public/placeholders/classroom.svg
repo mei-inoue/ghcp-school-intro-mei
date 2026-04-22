@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" role="img" aria-labelledby="title desc">
+  <title id="title">Classroom placeholder</title>
+  <desc id="desc">Monochrome illustration of desks, a board, and studio tools.</desc>
+  <rect width="900" height="720" fill="#f4f4f1"/>
+  <rect x="110" y="110" width="520" height="220" fill="#fff" stroke="#111" stroke-width="7"/>
+  <path d="M150 180H590M150 230H450" stroke="#111" stroke-width="7"/>
+  <rect x="170" y="430" width="170" height="110" fill="#fff" stroke="#111" stroke-width="7"/>
+  <rect x="390" y="430" width="170" height="110" fill="#fff" stroke="#111" stroke-width="7"/>
+  <rect x="610" y="430" width="170" height="110" fill="#fff" stroke="#111" stroke-width="7"/>
+  <path d="M255 540V620M475 540V620M695 540V620" stroke="#111" stroke-width="7"/>
+  <circle cx="735" cy="190" r="70" fill="none" stroke="#111" stroke-width="7"/>
+  <path d="M735 120V260M665 190H805" stroke="#111" stroke-width="7"/>
+</svg>

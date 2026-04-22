@@ -1,0 +1,22 @@
+---
+import type { Locale } from "../i18n/types";
+
+type Props = {
+  locale: Locale;
+  labels: {
+    ja: string;
+    en: string;
+  };
+};
+
+const { locale, labels } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const jaHref = `${base}ja/`;
+const enHref = `${base}en/`;
+---
+
+<div class="lang-switch" aria-label="Language switcher">
+  <a href={jaHref} aria-current={locale === "ja" ? "page" : undefined}>{labels.ja}</a>
+  <span>/</span>
+  <a href={enHref} aria-current={locale === "en" ? "page" : undefined}>{labels.en}</a>
+</div>

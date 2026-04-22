@@ -1,0 +1,96 @@
+---
+import Hero from "../../components/Hero.astro";
+import Section from "../../components/Section.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { en } from "../../i18n/en";
+
+const t = en;
+---
+
+<BaseLayout
+  locale="en"
+  title={t.meta.title}
+  description={t.meta.description}
+  brand={t.header.brand}
+  nav={t.header.nav}
+  langLabels={t.langSwitch}
+  officialUrl={t.access.officialUrl}
+  footerLabel={t.footer.officialLabel}
+  footerCopy={t.footer.copyright}
+>
+  <Hero
+    eyebrow={t.hero.eyebrow}
+    title={t.hero.title}
+    body={t.hero.body}
+    quote={t.hero.quote}
+    ctaLabel={t.hero.ctaLabel}
+    officialUrl={t.access.officialUrl}
+    imageAlt={t.hero.imageAlt}
+  />
+
+  <Section id="about" number="02" eyebrow={t.about.eyebrow} title={t.about.title}>
+    <div class="section-grid">
+      <div>
+        <p class="section-intro">{t.about.lead}</p>
+        <p class="section-copy">{t.about.body}</p>
+        <dl class="facts">
+          {t.about.facts.map((fact) => (
+            <div>
+              <dt>{fact.label}</dt>
+              <dd>{fact.value}</dd>
+            </div>
+          ))}
+        </dl>
+        <p class="source-note">{t.about.sourceLabel}</p>
+      </div>
+      <div class="media-card">
+        <img src={`${import.meta.env.BASE_URL}placeholders/campus.svg`} alt={t.about.imageAlt} loading="lazy" />
+      </div>
+    </div>
+  </Section>
+
+  <Section id="curriculum" number="03" eyebrow={t.curriculum.eyebrow} title={t.curriculum.title}>
+    <p class="section-intro">{t.curriculum.intro}</p>
+    <div class="curriculum-list">
+      {t.curriculum.items.map((item) => (
+        <article>
+          <h3>{item.title}</h3>
+          <p>{item.body}</p>
+        </article>
+      ))}
+    </div>
+    <div class="media-card" style="margin-top: 2rem;">
+      <img src={`${import.meta.env.BASE_URL}placeholders/classroom.svg`} alt={t.curriculum.imageAlt} loading="lazy" />
+    </div>
+  </Section>
+
+  <Section id="life" number="04" eyebrow={t.life.eyebrow} title={t.life.title}>
+    <div class="life-layout">
+      <div>
+        <p class="section-copy">{t.life.body}</p>
+        <ul class="life-highlights">
+          {t.life.highlights.map((highlight) => (
+            <li>{highlight}</li>
+          ))}
+        </ul>
+      </div>
+      <div class="media-card">
+        <img src={`${import.meta.env.BASE_URL}placeholders/dorm.svg`} alt={t.life.imageAlt} loading="lazy" />
+      </div>
+    </div>
+  </Section>
+
+  <Section id="access" number="05" eyebrow={t.access.eyebrow} title={t.access.title}>
+    <div class="access-layout">
+      <div class="access-card">
+        <h3>{t.access.address}</h3>
+        <p>{t.access.transport}</p>
+        <p class="supporting-note">{t.access.note}</p>
+        <a class="button-link" href={t.access.officialUrl} target="_blank" rel="noopener">{t.access.officialLabel}</a>
+      </div>
+      <div class="media-card">
+        <img src={`${import.meta.env.BASE_URL}placeholders/access.svg`} alt={t.access.imageAlt} loading="lazy" />
+      </div>
+    </div>
+  </Section>
+</BaseLayout>

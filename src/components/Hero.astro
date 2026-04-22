@@ -1,0 +1,28 @@
+---
+type Props = {
+  eyebrow: string;
+  title: string;
+  body: string;
+  quote: string;
+  ctaLabel: string;
+  officialUrl: string;
+  imageAlt: string;
+};
+
+const { eyebrow, title, body, quote, ctaLabel, officialUrl, imageAlt } = Astro.props;
+---
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="hero-eyebrow">{eyebrow}</p>
+    <h1>{title}</h1>
+    <p class="hero-body">{body}</p>
+    <div class="hero-actions">
+      <a class="button-link" href={officialUrl} target="_blank" rel="noopener">{ctaLabel}</a>
+    </div>
+  </div>
+  <div class="hero-media">
+    <img src={`${import.meta.env.BASE_URL}placeholders/hero.svg`} alt={imageAlt} loading="eager" />
+    <p class="hero-quote">{quote}</p>
+  </div>
+</section>

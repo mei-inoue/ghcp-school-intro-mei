@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" role="img" aria-labelledby="title desc">
+  <title id="title">Dorm placeholder</title>
+  <desc id="desc">Monochrome depiction of residential life and circulation between rooms.</desc>
+  <rect width="900" height="720" fill="#f4f4f1"/>
+  <rect x="130" y="160" width="640" height="380" fill="#fff" stroke="#111" stroke-width="7"/>
+  <path d="M130 285H770M130 410H770M343 160V540M557 160V540" stroke="#111" stroke-width="7"/>
+  <circle cx="238" cy="222" r="28" fill="#111"/>
+  <circle cx="450" cy="347" r="28" fill="#111"/>
+  <circle cx="662" cy="472" r="28" fill="#111"/>
+  <path d="M180 610H720" stroke="#111" stroke-width="7"/>
+</svg>

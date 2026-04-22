@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" role="img" aria-labelledby="title desc">
+  <title id="title">Campus placeholder</title>
+  <desc id="desc">Monochrome composition suggesting hills, buildings, and walking paths.</desc>
+  <rect width="900" height="720" fill="#f4f4f1"/>
+  <path d="M0 530C120 480 220 390 330 410C420 425 510 520 630 500C760 478 810 360 900 340V720H0Z" fill="#e0e0da"/>
+  <path d="M100 580C240 560 370 620 480 560C600 495 710 600 820 540" fill="none" stroke="#111" stroke-width="6"/>
+  <rect x="170" y="250" width="210" height="150" fill="#fff" stroke="#111" stroke-width="7"/>
+  <rect x="470" y="220" width="150" height="180" fill="#fff" stroke="#111" stroke-width="7"/>
+  <rect x="660" y="260" width="90" height="140" fill="#fff" stroke="#111" stroke-width="7"/>
+  <path d="M135 210H420M135 182H350" stroke="#111" stroke-width="7"/>
+</svg>
