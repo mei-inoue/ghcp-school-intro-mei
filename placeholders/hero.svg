@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Editorial hero placeholder</title>
+  <desc id="desc">A monochrome abstract illustration of the school facade and mountain horizon.</desc>
+  <rect width="1200" height="900" fill="#f4f4f1"/>
+  <path d="M0 700L240 520L420 610L660 380L910 520L1200 320V900H0Z" fill="#d9d9d2"/>
+  <rect x="210" y="200" width="620" height="360" fill="#fff" stroke="#111" stroke-width="8"/>
+  <rect x="280" y="270" width="110" height="220" fill="none" stroke="#111" stroke-width="8"/>
+  <rect x="455" y="270" width="110" height="220" fill="none" stroke="#111" stroke-width="8"/>
+  <rect x="630" y="270" width="110" height="220" fill="none" stroke="#111" stroke-width="8"/>
+  <path d="M850 170L1000 170L1000 700" fill="none" stroke="#111" stroke-width="8"/>
+  <circle cx="965" cy="135" r="28" fill="#111"/>
+  <path d="M120 180H320M120 220H400M120 260H280" stroke="#111" stroke-width="8"/>
+</svg>
