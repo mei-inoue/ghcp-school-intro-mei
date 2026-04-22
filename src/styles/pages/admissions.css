@@ -1,0 +1,91 @@
+.page-hero {
+  padding: 120px var(--gutter) 80px;
+  border-bottom: 1px solid var(--color-line);
+}
+.page-hero h1 {
+  font-family: var(--font-en);
+  font-weight: 900;
+  font-size: clamp(64px, 12vw, 200px);
+  line-height: 0.92;
+}
+.page-hero p { margin-top: 24px; max-width: 60ch; line-height: 2; }
+
+.scholarship {
+  padding: 120px var(--gutter);
+  background: var(--color-fg);
+  color: var(--color-bg);
+}
+.scholarship h2 { margin-bottom: 24px; }
+.scholarship p { max-width: 60ch; line-height: 2; opacity: 0.85; }
+.scholarship ul { margin-top: 32px; display: grid; gap: 12px; }
+.scholarship li {
+  padding-left: 24px;
+  position: relative;
+  font-size: 15px;
+}
+.scholarship li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0.7em;
+  width: 12px; height: 1px;
+  background: currentColor;
+}
+
+.schedule {
+  padding: 120px var(--gutter);
+}
+.schedule__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 32px;
+  padding: 32px 0;
+  border-top: 1px solid var(--color-line);
+  align-items: baseline;
+}
+.schedule__row strong {
+  font-family: var(--font-en);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.schedule__row h3 { font-size: 22px; }
+.schedule__row p { line-height: 1.9; }
+@media (max-width: 768px) {
+  .schedule__row { grid-template-columns: 1fr; gap: 8px; }
+}
+
+.faq { padding: 0 var(--gutter) 120px; }
+.faq details {
+  border-top: 1px solid var(--color-line);
+  padding: 24px 0;
+}
+.faq details:last-child { border-bottom: 1px solid var(--color-line); }
+.faq summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: clamp(16px, 1.6vw, 20px);
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: '+';
+  font-family: var(--font-en);
+  font-weight: 300;
+  font-size: 24px;
+  transition: transform 0.3s;
+}
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { margin-top: 16px; line-height: 2; opacity: 0.85; max-width: 60ch; }
+
+.contact {
+  padding: 120px var(--gutter);
+  text-align: center;
+  border-top: 1px solid var(--color-line);
+}
+.contact h2 { margin-bottom: 16px; }
+.contact p { margin-bottom: 32px; opacity: 0.8; }
