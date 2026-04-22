@@ -1,0 +1,155 @@
+/* ===== Hero ===== */
+.hero {
+  position: relative;
+  min-height: calc(100vh - 72px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px var(--gutter);
+  overflow: hidden;
+}
+.hero__parallax {
+  position: absolute;
+  inset: -10% -5%;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(0,0,0,0.06), transparent 60%),
+    repeating-linear-gradient(0deg, transparent 0 39px, rgba(0,0,0,0.04) 39px 40px);
+}
+.hero__eyebrow { margin-bottom: 32px; }
+.hero__title {
+  font-family: var(--font-jp);
+  font-weight: 900;
+  font-size: clamp(48px, 10vw, 160px);
+  line-height: 0.98;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.hero__title span { display: inline-block; }
+.hero__sub {
+  font-size: clamp(14px, 1.4vw, 17px);
+  max-width: 48ch;
+  margin-bottom: 56px;
+  line-height: 2;
+}
+.hero__meta {
+  position: absolute;
+  bottom: 40px;
+  left: var(--gutter);
+  right: var(--gutter);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: var(--font-en);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.hero__hand {
+  position: absolute;
+  right: var(--gutter);
+  top: 22%;
+  font-family: var(--font-hand);
+  font-size: clamp(28px, 3.6vw, 56px);
+  line-height: 1.2;
+  max-width: 18ch;
+  text-align: right;
+  transform: rotate(-3deg);
+}
+@media (max-width: 768px) {
+  .hero__hand { position: static; text-align: left; margin-bottom: 32px; transform: none; }
+  .hero__meta { position: static; flex-direction: column; gap: 12px; align-items: flex-start; margin-top: 40px; }
+}
+
+/* ===== Introductions ===== */
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.intro-grid__num {
+  font-family: var(--font-en);
+  font-weight: 900;
+  font-size: clamp(120px, 18vw, 320px);
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+}
+.intro-grid__body h2 { margin-bottom: 24px; }
+.intro-grid--reverse .intro-grid__num { order: 2; text-align: right; }
+@media (max-width: 768px) {
+  .intro-grid { grid-template-columns: 1fr; gap: 32px; }
+  .intro-grid--reverse .intro-grid__num { order: 0; text-align: left; }
+}
+
+/* ===== Stats counter ===== */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+  padding: 56px 0;
+}
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.stats__num {
+  font-family: var(--font-en);
+  font-weight: 900;
+  font-size: clamp(48px, 6vw, 96px);
+  line-height: 1;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.stats__num span:last-child { font-size: 0.4em; }
+.stats__label { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.7; }
+@media (max-width: 768px) {
+  .stats { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+}
+
+/* ===== Map / People ===== */
+.map-section {
+  background: var(--color-fg);
+  color: var(--color-bg);
+  padding: 120px var(--gutter);
+}
+.map-section h2 { color: var(--color-bg); }
+.map-section .lead { color: rgba(255,255,255,0.8); }
+.map-illustration {
+  margin-top: 48px;
+  aspect-ratio: 16 / 9;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1), transparent 60%),
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.06) 0 2px, transparent 2px 24px);
+  border: 1px solid rgba(255,255,255,0.2);
+  position: relative;
+  overflow: hidden;
+}
+.map-illustration::after {
+  content: '徳島県 神山町';
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  font-family: var(--font-en);
+  letter-spacing: 0.2em;
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.people-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.people-card .frame { aspect-ratio: 3 / 4; }
+.people-card h3 { font-size: 18px; margin: 16px 0 4px; }
+.people-card p { font-size: 13px; opacity: 0.7; }
+@media (max-width: 768px) {
+  .people-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+}
