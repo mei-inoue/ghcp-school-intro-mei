@@ -15,8 +15,8 @@ const jaHref = `${base}ja/`;
 const enHref = `${base}en/`;
 ---
 
-<div class="lang-switch" aria-label="Language switcher">
+<nav class="lang-switch" aria-label="Language switcher">
   <a href={jaHref} aria-current={locale === "ja" ? "page" : undefined}>{labels.ja}</a>
   <span>/</span>
   <a href={enHref} aria-current={locale === "en" ? "page" : undefined}>{labels.en}</a>
-</div>
+</nav>
